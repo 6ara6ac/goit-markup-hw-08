@@ -1,0 +1,71 @@
+// Team section
+@import './socials';
+
+.team {
+  background-color: #f5f4fa;
+}
+
+.team__wrapper {
+  padding: 30px 0;
+}
+
+.team__list {
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  margin-left: 0;
+}
+
+.team__item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: $secondary-color;
+}
+
+.team__title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $title-color;
+}
+
+.team__subtitle {
+  margin-bottom: 10px;
+
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.19;
+  color: $title-color;
+  letter-spacing: 0.03em;
+}
+
+.team__caption {
+  margin-bottom: 16px;
+
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.team__socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.team__icon-list {
+  @extend %icons-social;
+}
+
+.team__icon-link {
+  &:hover,
+  &:focus {
+    background-color: $accient-color;
+    fill: $secondary-color;
+  }
+}

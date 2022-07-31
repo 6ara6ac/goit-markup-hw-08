@@ -1,0 +1,66 @@
+/* Form field */
+
+.form__field {
+  margin-bottom: 10px;
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
+
+.form__inner {
+  position: relative;
+}
+
+.form__input {
+  resize: none;
+  padding: 12px 42px 12px;
+
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  outline: transparent;
+
+  &:hover,
+  &:hover.textarea {
+    border: 1px solid $accient-color;
+    border-radius: 4px;
+    fill: $accient-color;
+  }
+
+  &:focus + .icon-modal {
+    fill: $accient-color;
+  }
+}
+
+.form__input.textarea {
+  resize: none;
+  padding: 12px 16px 12px;
+
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
+
+.form__icon {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  fill: #212121;
+  transition: 250ms $timing-function;
+}

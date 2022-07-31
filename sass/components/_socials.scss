@@ -1,0 +1,20 @@
+// Socials icons
+
+%icons-social {
+  transition: 250ms $timing-function;
+
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  fill: $icons-color;
+
+  &:hover,
+  &:focus {
+    background-color: $accient-color;
+    fill: $secondary-color;
+  }
+}

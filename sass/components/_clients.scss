@@ -1,0 +1,40 @@
+// Clients section
+
+.clents__title {
+  margin-bottom: 50px;
+
+  text-align: center;
+  color: $title-color;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+
+.clients__list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+.clients__icon {
+  height: 60px;
+  width: 106px;
+}
+
+.clients__item {
+  transition: 250ms $timing-function;
+
+  display: flex;
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  fill: $icons-color;
+}
+
+.clients__item:hover {
+  fill: $accient-color;
+  border: 1px solid $accient-color;
+}
