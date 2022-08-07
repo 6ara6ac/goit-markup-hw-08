@@ -1,0 +1,144 @@
+@media screen and (max-width: 767px) {
+  .header__container {
+    display: none;
+  }
+
+  .mobile__menu {
+    display: inline-flex;
+    align-items: center;
+
+    width: 100%;
+    height: 60px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    border-bottom: 1px solid #ececec;
+  }
+
+  .mobile__menu-container {
+    max-width: 480px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .mobile__button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    z-index: 3;
+
+    fill: $title-color;
+
+    transition: 250ms $timing-function;
+
+    & .navigation__open:hover {
+      fill: $accient-color;
+    }
+
+    & .navigation__closed:hover {
+      fill: $accient-color;
+    }
+
+    & .navigation__open {
+      display: none;
+    }
+    &.is-open .navigation__open {
+      display: block;
+    }
+
+    &.is-open .navigation__closed {
+      display: none;
+    }
+  }
+
+  .mobile__nav {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &.is-open {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      overflow-y: scroll;
+      z-index: 2;
+
+      padding: 32px 40px;
+    }
+  }
+
+  .mobile__nav-link {
+    color: $title-color;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+
+    &.current {
+      color: $accient-color;
+    }
+  }
+}
+
+.mobile__contacts {
+  margin-bottom: 48px;
+}
+
+.mobile__social {
+  display: flex;
+}
+
+.mobile__social-item {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  color: $accient-color;
+  letter-spacing: 0.02em;
+
+  padding: 0 10px;
+  margin-bottom: 16px;
+
+  &:nth-child(-n + 3) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+
+  &:first-child {
+    padding-left: 0;
+  }
+}
+
+.mobile__contacts-item {
+  padding: 16px 0;
+}
+
+.mobile__nav-item {
+  padding: 16px 0;
+}
+
+.mobile__nav-link.phone {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: $accient-color;
+}
+
+.mobile__nav-link.mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: $font-color;
+}

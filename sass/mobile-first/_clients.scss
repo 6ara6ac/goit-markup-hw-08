@@ -1,0 +1,58 @@
+// Clients section
+
+.clents__title {
+  margin-bottom: 50px;
+
+  text-align: center;
+  color: $title-color;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.clients__list-item {
+  width: 100%;
+
+  @media screen and (max-width: 767px) {
+    width: 210px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 226px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 170px;
+    flex-wrap: nowrap;
+  }
+}
+
+.clients__icon {
+  height: 60px;
+  width: 106px;
+}
+
+.clients__item {
+  display: flex;
+  height: 92px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  fill: $icons-color;
+
+  transition: 250ms $timing-function;
+
+  &:hover {
+    fill: $accient-color;
+    border: 1px solid $accient-color;
+  }
+}

@@ -16,14 +16,14 @@
 <body>
     <header class="header" id="header">
         <div class="header__container container">
-            <a class="logo" href="./index.html">Web<span class="logo__header">Studio</span></a>
+            <a class="logo top" href="./index.html">Web<span class="logo__header">Studio</span></a>
             <nav class="navigation">
                 <ul class="header__list">
                     <li>
                         <a class="header__link" href="./index.html">Студия</a>
                     </li>
                     <li>
-                        <a class="header__link current" href="#">Портфолио</a>
+                        <a class="header__link current" href="./portfolio.html">Портфолио</a>
                     </li>
                     <li>
                         <a class="header__link" href="#">Контакты</a>
@@ -49,6 +49,65 @@
                 </li>
             </ul>
         </div>
+
+        <div class="mobile__menu">
+            <div class="mobile__menu-container">
+                <a class="logo mobile" href="./index.html">Web<span class="logo__header">Studio</span></a>
+                <button type="button" class="mobile__button" aria-expanded="false" data-menu-button
+                    aria-controls="menu__controls">
+                    <svg width="40" height="40" aria-label="Переключатель мобильного окна">
+                        <use class="navigation__closed" href="./images/mobile.svg#icon-menu_40px"></use>
+                        <use class="navigation__open" href="./images/mobile.svg#icon-close_40px"></use>
+                    </svg>
+                </button>
+
+
+                <div class="mobile__nav" id="menu__controls" data-menu>
+                    <ul class="mobile__nav-list">
+                        <li class="mobile__nav-item">
+                            <a class="mobile__nav-link" href="./index.html">Студия</a>
+                        </li>
+                        <li class="mobile__nav-item">
+                            <a class="mobile__nav-link current" href="#">Портфолио</a>
+                        </li>
+                        <li class="mobile__nav-item">
+                            <a class="mobile__nav-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="mobile__links">
+                        <ul class="mobile__contacts">
+                            <li class="mobile__contacts-item">
+                                <a class="mobile__nav-link phone" href="tel:+380961111111">
+                                    +38 096 111 11 11
+                                </a>
+                            </li>
+                            <li class="mobile__contacts-item">
+                                <a class="mobile__nav-link mail" href="mailto:info@devstudio.com">
+                                    info@devstudio.com
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="mobile__social">
+                            <li class="mobile__social-item"><a class="mobile__social-links" href="#"></a>
+                                Instagram
+                            </li>
+                            <li class="mobile__social-item"><a class="mobile__social-links" href="#"></a>
+                                Twitter
+                            </li>
+                            <li class="mobile__social-item"><a class="mobile__social-links" href="#"></a>
+                                Facebook
+                            </li>
+                            <li class="mobile__social-item"><a class="mobile__social-links" href="#"></a>
+                                Linkedin
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </header>
 
     <main>
@@ -67,7 +126,26 @@
                     <li class="portfolio__item">
                         <a class="portfolio__link" href="#">
                             <div class="portfolio__img">
-                                <img src="./images/img-8.jpg" width="370" alt="Сайт с сотрудниками" />
+                                <picture>
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/technokryak_mobile@1x.webp 1x , ./images/portfolio/technokryak_mobile@2x.webp 2x"
+                                        type="image/webp" />
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/technokryak_tablet@1x.webp 1x , ./images/portfolio/technokryak_tablet@2x.webp 2x"
+                                        type="image/webp" />
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/technokryak_desktop@1x.webp 1x , ./images/portfolio/technokryak_desktop@2x.webp 2x"
+                                        type="image/webp" />
+
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/technokryak_mobile@1x.jpg 1x , ./images/portfolio/technokryak_mobile@2x.jpg 2x" />
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/technokryak_tablet@1x.jpg 1x , ./images/portfolio/technokryak_tablet@2x.jpg 2x" />
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/technokryak_desktop@1x.jpg 1x , ./images/portfolio/technokryak_desktop@2x.jpg 2x" />
+                                    <img class="team__img" src="./images/technokryak_main" alt="Сайт с сотрудниками" />
+                                </picture>
+
                                 <p class="portfolio__description">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                     сервисов.Все это позволит посетителю получить исчерпывающие сведения
@@ -84,7 +162,26 @@
                     <li class="portfolio__item">
                         <a class="portfolio__link" href="#">
                             <div class="portfolio__img">
-                                <img src="./images/img-9.jpg" width="370" alt="Игроки NBA с мячом" />
+                                <picture>
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/poster_mobile@1x.webp 1x , ./images/portfolio/poster_mobile@2x.webp 2x"
+                                        type="image/webp" />
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/poster_tablet@1x.webp 1x , ./images/portfolio/poster_tablet@2x.webp 2x"
+                                        type="image/webp" />
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/poster_desktop@1x.webp 1x , ./images/portfolio/poster_desktop@2x.webp 2x"
+                                        type="image/webp" />
+
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/poster_mobile@1x.jpg 1x , ./images/portfolio/poster_mobile@2x.jpg 2x" />
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/poster_tablet@1x.jpg 1x , ./images/portfolio/poster_tablet@2x.jpg 2x" />
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/poster_desktop@1x.jpg 1x , ./images/portfolio/poster_desktop@2x.jpg 2x" />
+                                    <img class="team__img" src="./images/poster_main" alt="Игроки NBA с мячом" />
+                                </picture>
+
                                 <p class="portfolio__description">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                     сервисов.Все это позволит посетителю получить исчерпывающие сведения
@@ -101,7 +198,27 @@
                     <li class="portfolio__item">
                         <a class="portfolio__link" href="#">
                             <div class="portfolio__img">
-                                <img src="./images/img-10.jpg" width="370" alt="Постер с рыбой и надписью Seafood" />
+                                <picture>
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/restaurant_mobile@1x.webp 1x , ./images/portfolio/restaurant_mobile@2x.webp 2x"
+                                        type="image/webp" />
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/restaurant_tablet@1x.webp 1x , ./images/portfolio/restaurant_tablet@2x.webp 2x"
+                                        type="image/webp" />
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/restaurant_desktop@1x.webp 1x , ./images/portfolio/restaurant_desktop@2x.webp 2x"
+                                        type="image/webp" />
+
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/restaurant_mobile@1x.jpg 1x , ./images/portfolio/restaurant_mobile@2x.jpg 2x" />
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/restaurant_tablet@1x.jpg 1x , ./images/portfolio/restaurant_tablet@2x.jpg 2x" />
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/restaurant_desktop@1x.jpg 1x , ./images/portfolio/restaurant_desktop@2x.jpg 2x" />
+                                    <img class="team__img" src="./images/restaurant_main"
+                                        alt="Постер с рыбой и надписью Seafood" />
+                                </picture>
+
                                 <p class="portfolio__description">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                     сервисов.Все это позволит посетителю получить исчерпывающие сведения
@@ -118,7 +235,26 @@
                     <li class="portfolio__item">
                         <a class="portfolio__link" href="#">
                             <div class="portfolio__img">
-                                <img src="./images/img-11.jpg" width="370" alt="Черные наушники" />
+                                <picture>
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/prime_mobile@1x.webp 1x , ./images/portfolio/prime_mobile@2x.webp 2x"
+                                        type="image/webp" />
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/prime_tablet@1x.webp 1x , ./images/portfolio/prime_tablet@2x.webp 2x"
+                                        type="image/webp" />
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/prime_desktop@1x.webp 1x , ./images/portfolio/prime_desktop@2x.webp 2x"
+                                        type="image/webp" />
+
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/prime_mobile@1x.jpg 1x , ./images/portfolio/prime_mobile@2x.jpg 2x" />
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/prime_tablet@1x.jpg 1x , ./images/portfolio/prime_tablet@2x.jpg 2x" />
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/prime_desktop@1x.jpg 1x , ./images/portfolio/prime_desktop@2x.jpg 2x" />
+                                    <img class="team__img" src="./images/prime_main" alt="Черные наушники" />
+                                </picture>
+
                                 <p class="portfolio__description">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                     сервисов.Все это позволит посетителю получить исчерпывающие сведения о&nbsp;компании
@@ -135,7 +271,26 @@
                     <li class="portfolio__item">
                         <a class="portfolio__link" href="#">
                             <div class="portfolio__img">
-                                <img src="./images/img-12.jpg" width="370" alt="Две коробки" />
+                                <picture>
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/boxes_mobile@1x.webp 1x , ./images/portfolio/boxes_mobile@2x.webp 2x"
+                                        type="image/webp" />
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/boxes_tablet@1x.webp 1x , ./images/portfolio/boxes_tablet@2x.webp 2x"
+                                        type="image/webp" />
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/boxes_desktop@1x.webp 1x , ./images/portfolio/boxes_desktop@2x.webp 2x"
+                                        type="image/webp" />
+
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/boxes_mobile@1x.jpg 1x , ./images/portfolio/boxes_mobile@2x.jpg 2x" />
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/boxes_tablet@1x.jpg 1x , ./images/portfolio/boxes_tablet@2x.jpg 2x" />
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/boxes_desktop@1x.jpg 1x , ./images/portfolio/boxes_desktop@2x.jpg 2x" />
+                                    <img class="team__img" src="./images/boxes_main" alt="Две коробки" />
+                                </picture>
+
                                 <p class="portfolio__description">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                     сервисов.Все это позволит посетителю получить исчерпывающие сведения о&nbsp;компании
@@ -151,7 +306,26 @@
                     <li class="portfolio__item">
                         <a class="portfolio__link" href="#">
                             <div class="portfolio__img">
-                                <img src="./images/img-13.jpg" width="370" alt="Сайт с темным фоном" />
+                                <picture>
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/inspiration_mobile@1x.webp 1x , ./images/portfolio/inspiration_mobile@2x.webp 2x"
+                                        type="image/webp" />
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/inspiration_tablet@1x.webp 1x , ./images/portfolio/inspiration_tablet@2x.webp 2x"
+                                        type="image/webp" />
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/inspiration_desktop@1x.webp 1x , ./images/portfolio/inspiration_desktop@2x.webp 2x"
+                                        type="image/webp" />
+
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/inspiration_mobile@1x.jpg 1x , ./images/portfolio/inspiration_mobile@2x.jpg 2x" />
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/inspiration_tablet@1x.jpg 1x , ./images/portfolio/inspiration_tablet@2x.jpg 2x" />
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/inspiration_desktop@1x.jpg 1x , ./images/portfolio/inspiration_desktop@2x.jpg 2x" />
+                                    <img class="team__img" src="./images/inspiration_main" alt="Сайт с темным фоном" />
+                                </picture>
+
                                 <p class="portfolio__description">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                     сервисов.Все это позволит посетителю получить исчерпывающие сведения о&nbsp;компании
@@ -167,7 +341,26 @@
                     <li class="portfolio__item">
                         <a class="portfolio__link" href="#">
                             <div class="portfolio__img">
-                                <img src="./images/img-14.jpg" width="370" alt="Белый глянцевый журнал" />
+                                <picture>
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/limited_mobile@1x.webp 1x , ./images/portfolio/limited_mobile@2x.webp 2x"
+                                        type="image/webp" />
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/limited_tablet@1x.webp 1x , ./images/portfolio/limited_tablet@2x.webp 2x"
+                                        type="image/webp" />
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/limited_desktop@1x.webp 1x , ./images/portfolio/limited_desktop@2x.webp 2x"
+                                        type="image/webp" />
+
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/limited_mobile@1x.jpg 1x , ./images/portfolio/limited_mobile@2x.jpg 2x" />
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/limited_tablet@1x.jpg 1x , ./images/portfolio/limited_tablet@2x.jpg 2x" />
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/limited_desktop@1x.jpg 1x , ./images/portfolio/limited_desktop@2x.jpg 2x" />
+                                    <img class="team__img" src="./images/limited_main" alt="Белый глянцевый журнал" />
+                                </picture>
+
                                 <p class="portfolio__description">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                     сервисов.Все это позволит посетителю получить исчерпывающие сведения о&nbsp;компании
@@ -183,7 +376,27 @@
                     <li class="portfolio__item">
                         <a class="portfolio__link" href="#">
                             <div class="portfolio__img">
-                                <img src="./images/img-15.jpg" width="370" alt="Белая бирка с надписью LAB EL TAG" />
+                                <picture>
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/lab_mobile@1x.webp 1x , ./images/portfolio/lab_mobile@2x.webp 2x"
+                                        type="image/webp" />
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/lab_tablet@1x.webp 1x , ./images/portfolio/lab_tablet@2x.webp 2x"
+                                        type="image/webp" />
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/lab_desktop@1x.webp 1x , ./images/portfolio/lab_desktop@2x.webp 2x"
+                                        type="image/webp" />
+
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/lab_mobile@1x.jpg 1x , ./images/portfolio/lab_mobile@2x.jpg 2x" />
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/lab_tablet@1x.jpg 1x , ./images/portfolio/lab_tablet@2x.jpg 2x" />
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/lab_desktop@1x.jpg 1x , ./images/portfolio/lab_desktop@2x.jpg 2x" />
+                                    <img class="team__img" src="./images/lab_main"
+                                        alt="Белая бирка с надписью LAB EL TAG" />
+                                </picture>
+
                                 <p class="portfolio__description">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                     сервисов.Все это позволит посетителю получить исчерпывающие сведения о&nbsp;компании
@@ -200,7 +413,27 @@
                     <li class="portfolio__item">
                         <a class="portfolio__link" href="#">
                             <div class="portfolio__img">
-                                <img src="./images/img-16.jpg" alt="Человек работающий за компьютером" />
+                                <picture>
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/growing_mobile@1x.webp 1x , ./images/portfolio/growing_mobile@2x.webp 2x"
+                                        type="image/webp" />
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/growing_tablet@1x.webp 1x , ./images/portfolio/growing_tablet@2x.webp 2x"
+                                        type="image/webp" />
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/growing_desktop@1x.webp 1x , ./images/portfolio/growing_desktop@2x.webp 2x"
+                                        type="image/webp" />
+
+                                    <source media="(max-width: 767px)"
+                                        srcset="./images/portfolio/growing_mobile@1x.jpg 1x , ./images/portfolio/growing_mobile@2x.jpg 2x" />
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/growing_tablet@1x.jpg 1x , ./images/portfolio/growing_tablet@2x.jpg 2x" />
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/growing_desktop@1x.jpg 1x , ./images/portfolio/growing_desktop@2x.jpg 2x" />
+                                    <img class="team__img" src="./images/growing_main"
+                                        alt="Человек работающий за компьютером" />
+                                </picture>
+
                                 <p class="portfolio__description">
                                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                                     сервисов.Все это позволит посетителю получить исчерпывающие сведения о&nbsp;компании
@@ -221,51 +454,55 @@
 
     <footer class="footer">
         <div class="footer__flex container">
-            <div>
-                <a class="logo" href="./index.html">Web<span class="logo__footer">Studio</span></a>
-                <address class="footer__adress">г. Киев, пр-т Леси Украинки, 26</address>
-                <ul>
-                    <li class="footer__link"><a class="footer__contacts"
-                            href="mailto:info@devstudio.com">info@devstudio.com</a>
-                    </li>
-                    <li class="footer__link"><a class="footer__contacts" href="tel:+380961111111"> +38 096 111 11 11</a>
-                    </li>
-                </ul>
+            <div class="footer__tumb">
+                <div class="footer__nav">
+                    <a class="logo" href="./index.html">Web<span class="logo__footer">Studio</span></a>
+                    <address class="footer__adress">г. Киев, пр-т Леси Украинки, 26</address>
+                    <ul>
+                        <li class="footer__link"><a class="footer__contacts"
+                                href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                        <li class="footer__link"><a class="footer__contacts" href="tel:+380961111111"> +38 096 111 11
+                                11</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="socials">
+                    <h2 class="socials__title">Присоеденяйтесь</h2>
+                    <ul class="socials__list">
+                        <li>
+                            <a class="socials__link" href="#">
+                                <svg class="socials__icon" width=" 20" height="20">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="socials__link" href="#">
+                                <svg class="socials__icon" width=" 20" height="20">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="socials__link" href="#">
+                                <svg class="socials__icon" width=" 20" height="20">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="socials__link" href="#">
+                                <svg class="socials__icon" width=" 20" height="20">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="socials">
-                <h2 class="socials__title">Присоеденяйтесь</h2>
-                <ul class="socials__list">
-                    <li>
-                        <a class="socials__link" href="#">
-                            <svg class="socials__icon" width="20" height="20">
-                                <use href="./images/icons.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="socials__link" href="#">
-                            <svg class="socials__icon" width="20" height="20">
-                                <use href="./images/icons.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="socials__link" href="#">
-                            <svg class="socials__icon" width="20" height="20">
-                                <use href="./images/icons.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="socials__link" href="#">
-                            <svg class="socials__icon" width="20" height="20">
-                                <use href="./images/icons.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
 
             <div class="sent-email">
                 <form class="sent-email__form">
@@ -282,6 +519,7 @@
         </div>
     </footer>
 
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
