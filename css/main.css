@@ -325,7 +325,7 @@ p {
 .section {
   padding: 94px 0;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .section {
     padding: 60px 0;
   }
@@ -467,6 +467,9 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
 }
 
 .mobile__social-item {
@@ -475,14 +478,10 @@ p {
   line-height: 1.22;
   color: #2196f3;
   letter-spacing: 0.02em;
-  padding: 0 10px;
-  margin-bottom: 16px;
+  padding-right: 10px;
 }
 .mobile__social-item:nth-child(-n+3) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
-}
-.mobile__social-item:first-child {
-  padding-left: 0;
 }
 
 .mobile__contacts-item {
@@ -619,7 +618,12 @@ p {
 }
 @media screen and (min-width: 768px) {
   .header__link.contacts {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: #757575;
@@ -635,7 +639,7 @@ p {
 .modal-button, .footer__button, .hero .hero__button {
   max-width: 200px;
   max-height: 50px;
-  padding: 15px;
+  padding: 15px 24px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -660,7 +664,7 @@ p {
 .modal-button, .footer__button, .hero .hero__button {
   max-width: 200px;
   max-height: 50px;
-  padding: 15px;
+  padding: 15px 24px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -753,6 +757,11 @@ p {
     line-height: 1.61;
   }
 }
+@media screen and (min-width: 696px) {
+  .hero .hero__title {
+    max-width: 696px;
+  }
+}
 .hero .hero__button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -818,6 +827,7 @@ p {
 
 .benefits__subtitle {
   margin-bottom: 10px;
+  text-align: center;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -825,17 +835,26 @@ p {
   text-transform: uppercase;
   color: #212121;
 }
+@media screen and (min-width: 767px) {
+  .benefits__subtitle {
+    text-align: left;
+  }
+}
 
 .benefits__caption {
   letter-spacing: 0.03em;
   line-height: 1.71;
 }
 
+.work {
+  padding-top: 0;
+}
 @media screen and (max-width: 1199px) {
   .work {
     display: none;
   }
 }
+
 .work__title {
   margin-bottom: 50px;
   font-size: 36px;
@@ -1061,7 +1080,7 @@ p {
 .modal-button, .footer__button, .hero .hero__button {
   max-width: 200px;
   max-height: 50px;
-  padding: 15px;
+  padding: 15px 24px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1480,7 +1499,7 @@ p {
 .modal-button, .hero .hero__button, .footer__button {
   max-width: 200px;
   max-height: 50px;
-  padding: 15px;
+  padding: 15px 24px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

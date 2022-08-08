@@ -101,7 +101,8 @@
   }
 
   .header__link.contacts {
-    display: block;
+    display: flex;
+    align-items: center;
 
     transition: 250ms $timing-function;
     color: $font-color;

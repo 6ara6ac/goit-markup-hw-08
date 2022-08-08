@@ -98,6 +98,8 @@
 
 .mobile__social {
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .mobile__social-item {
@@ -107,15 +109,10 @@
   color: $accient-color;
   letter-spacing: 0.02em;
 
-  padding: 0 10px;
-  margin-bottom: 16px;
+  padding-right: 10px;
 
   &:nth-child(-n + 3) {
     border-right: 1px solid rgba(33, 33, 33, 0.2);
-  }
-
-  &:first-child {
-    padding-left: 0;
   }
 }
 
